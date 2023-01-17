@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
-  title: Medience
-  description: 메디앙스에 사용되는 API 문서입니다.
+  title: Api
+  description: API 문서입니다.
   version: 1.0.0
 servers:
   - url: https://a735ff6a-9142-4852-8741-dedb4516c2f3.mock.pstmn.io/v1/api
