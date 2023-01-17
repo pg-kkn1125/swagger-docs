@@ -19,7 +19,8 @@
     <script>
       window.onload = () => {
         window.ui = SwaggerUIBundle({
-          url: "https://pg-kkn1125.github.io/swagger-docs/openapi.yaml",
+          cors: true,
+          url: `${location.protocol}//${location.hostname}:${location.port}/openapi.yaml`,
           dom_id: "#swagger-ui",
         });
       };
