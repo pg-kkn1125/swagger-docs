@@ -20,7 +20,9 @@
       window.onload = () => {
         window.ui = SwaggerUIBundle({
           cors: true,
-          url: `${location.protocol}//${location.hostname}:${location.port}/openapi.yaml`,
+          url: `${location.protocol}//${location.hostname}${
+            location.port ? ":" + location.port : ""
+          }${location.pathname}openapi.yaml`,
           dom_id: "#swagger-ui",
         });
       };
